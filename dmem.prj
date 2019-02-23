@@ -1,0 +1,2 @@
+vhdl work "spdistram_2kx8.vhd"
+vhdl work "DMEM.vhd"

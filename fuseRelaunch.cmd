@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel_tb_isim_beh.exe" -prj "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel_tb_beh.prj" "work.Toplevel_tb" 

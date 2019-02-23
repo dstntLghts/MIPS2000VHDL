@@ -1,0 +1,424 @@
+Release 13.1 - xst O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc3s4000-5-fg676
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/addsub32x.vhd" in Library work.
+Architecture structural of Entity addsub32x is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/LU.vhd" in Library work.
+Architecture structural of Entity lu is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_32x.vhd" in Library work.
+Architecture structural of Entity mux4to1_32x is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/OR_tree.vhd" in Library work.
+Architecture structural of Entity or_tree is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SLT.vhd" in Library work.
+Architecture behavioral of Entity slt is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SHIFT.vhd" in Library work.
+Architecture behavioral of Entity shift is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <addsub32x> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <LU> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux4to1_32x> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <OR_tree> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <SLT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SHIFT> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <addsub32x> in library <work> (Architecture <structural>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/addsub32x.vhd" line 38: Mux is complete : default of case is discarded
+Entity <addsub32x> analyzed. Unit <addsub32x> generated.
+
+Analyzing Entity <LU> in library <work> (Architecture <structural>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/LU.vhd" line 41: Mux is complete : default of case is discarded
+Entity <LU> analyzed. Unit <LU> generated.
+
+Analyzing Entity <mux4to1_32x> in library <work> (Architecture <structural>).
+Entity <mux4to1_32x> analyzed. Unit <mux4to1_32x> generated.
+
+Analyzing Entity <OR_tree> in library <work> (Architecture <structural>).
+Entity <OR_tree> analyzed. Unit <OR_tree> generated.
+
+Analyzing Entity <SLT> in library <work> (Architecture <behavioral>).
+Entity <SLT> analyzed. Unit <SLT> generated.
+
+Analyzing Entity <SHIFT> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SHIFT.vhd" line 62: Mux is complete : default of case is discarded
+Entity <SHIFT> analyzed. Unit <SHIFT> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <addsub32x>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/addsub32x.vhd".
+    Found 32-bit addsub for signal <S0>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addsub32x> synthesized.
+
+
+Synthesizing Unit <LU>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/LU.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <OUTa>.
+    Found 32-bit xor2 for signal <OUTa$xor0000> created at line 40.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <LU> synthesized.
+
+
+Synthesizing Unit <mux4to1_32x>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_32x.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <O>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <mux4to1_32x> synthesized.
+
+
+Synthesizing Unit <OR_tree>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/OR_tree.vhd".
+Unit <OR_tree> synthesized.
+
+
+Synthesizing Unit <SLT>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SLT.vhd".
+Unit <SLT> synthesized.
+
+
+Synthesizing Unit <SHIFT>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SHIFT.vhd".
+WARNING:Xst:647 - Input <INa<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <lui_en> is used but never assigned. This sourceless signal will be automatically connected to value 10000.
+    Found 32-bit 4-to-1 multiplexer for signal <OUTa>.
+    Found 32-bit shifter logical left for signal <OUTa$shift0003> created at line 59.
+    Found 32-bit shifter logical right for signal <OUTa$shift0004> created at line 61.
+    Found 32-bit shifter arithmetic right for signal <OUTa$shift0005> created at line 62.
+    Summary:
+	inferred  32 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <SHIFT> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ALU.vhd".
+WARNING:Xst:646 - Signal <ALUop_S<3:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <ALU> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Multiplexers                                         : 3
+ 32-bit 4-to-1 multiplexer                             : 3
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Multiplexers                                         : 3
+ 32-bit 4-to-1 multiplexer                             : 3
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <LU> ...
+
+Optimizing unit <SHIFT> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU.ngr
+Top Level Output File Name         : ALU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 108
+
+Cell Usage :
+# BELS                             : 706
+#      GND                         : 1
+#      INV                         : 30
+#      LUT2                        : 6
+#      LUT3                        : 265
+#      LUT4                        : 213
+#      MUXCY                       : 39
+#      MUXF5                       : 119
+#      VCC                         : 1
+#      XORCY                       : 32
+# IO Buffers                       : 108
+#      IBUF                        : 75
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s4000fg676-5 
+
+ Number of Slices:                      279  out of  27648     1%  
+ Number of 4 input LUTs:                514  out of  55296     0%  
+ Number of IOs:                         108
+ Number of bonded IOBs:                 108  out of    489    22%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 21.691ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 20628 / 33
+-------------------------------------------------------------------------
+Delay:               21.691ns (Levels of Logic = 20)
+  Source:            lui (PAD)
+  Destination:       Zero (PAD)
+
+  Data Path: lui to Zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.715   1.148  lui_IBUF (lui_IBUF)
+     LUT4:I0->O           86   0.479   2.133  P6/Sh_am_mux0001<0>1 (P6/Sh_am_mux0001<0>1)
+     LUT3:I0->O            4   0.479   0.949  P6/Sh12311 (P6/N01)
+     LUT3:I1->O            3   0.479   0.830  P6/Sh2211 (P6/Sh221)
+     LUT3:I2->O            3   0.479   0.941  P6/Sh2417 (P6/Sh2417)
+     LUT3:I1->O            1   0.479   0.000  P6/Sh245311 (P6/Sh24531)
+     MUXF5:I1->O           2   0.314   0.915  P6/Sh24531_f5 (P6/Sh245)
+     LUT3:I1->O            1   0.479   0.704  P6/Mmux_OUTa_313_SW0 (N291)
+     LUT4:I3->O            1   0.479   0.000  P6/Mmux_OUTa_313 (P6/Mmux_OUTa_313)
+     MUXF5:I1->O           1   0.314   0.976  P6/Mmux_OUTa_2_f5_12 (Shift_out<21>)
+     LUT4:I0->O            2   0.479   1.040  P3/Mmux_O26 (ALUout_21_OBUF)
+     LUT4:I0->O            1   0.479   0.000  P4/ORout_cmp_eq0000_wg_lut<4> (P4/ORout_cmp_eq0000_wg_lut<4>)
+     MUXCY:S->O            1   0.435   0.000  P4/ORout_cmp_eq0000_wg_cy<4> (P4/ORout_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  P4/ORout_cmp_eq0000_wg_cy<5> (P4/ORout_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  P4/ORout_cmp_eq0000_wg_cy<6> (P4/ORout_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.265   0.681  P4/ORout_cmp_eq0000_wg_cy<7> (Zero_OBUF)
+     OBUF:I->O                 4.909          Zero_OBUF (Zero)
+    ----------------------------------------
+    Total                     21.691ns (11.374ns logic, 10.317ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.54 secs
+ 
+--> 
+
+Total memory usage is 254464 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

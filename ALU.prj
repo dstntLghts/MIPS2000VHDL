@@ -1,0 +1,7 @@
+vhdl work "SLT.vhd"
+vhdl work "SHIFT.vhd"
+vhdl work "OR_tree.vhd"
+vhdl work "mux_4to1_32x.vhd"
+vhdl work "LU.vhd"
+vhdl work "addsub32x.vhd"
+vhdl work "ALU.vhd"

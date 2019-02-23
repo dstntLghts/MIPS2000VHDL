@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ALU.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ALU.syr" 

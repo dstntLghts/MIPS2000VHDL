@@ -1,0 +1,66 @@
+xst -intstyle ise -ifn "/home/xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "/home/xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vcx75t-ff484-2 Toplevel.ngc Toplevel.ngd  
+map -intstyle ise -p xc6vcx75t-ff484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Toplevel_map.ncd Toplevel.ngd Toplevel.pcf 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1500l-fg320-4 Toplevel.ngc Toplevel.ngd  
+map -intstyle ise -p xc3s1500l-fg320-4 -cm area -ir off -pr off -c 100 -o Toplevel_map.ncd Toplevel.ngd Toplevel.pcf 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vsx475t-ff1156-2 Toplevel.ngc Toplevel.ngd  
+map -intstyle ise -p xc6vsx475t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Toplevel_map.ncd Toplevel.ngd Toplevel.pcf 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx330t-ff1738-2 Toplevel.ngc Toplevel.ngd  
+map -intstyle ise -p xc5vlx330t-ff1738-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o Toplevel_map.ncd Toplevel.ngd Toplevel.pcf 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx330t-ff1738-2 Toplevel.ngc Toplevel.ngd  
+map -intstyle ise -p xc5vlx330t-ff1738-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o Toplevel_map.ncd Toplevel.ngd Toplevel.pcf 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s4000-fg676-5 Toplevel.ngc Toplevel.ngd  
+map -intstyle ise -p xc3s4000-fg676-5 -cm area -ir off -pr off -c 100 -o Toplevel_map.ncd Toplevel.ngd Toplevel.pcf 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel.syr" 

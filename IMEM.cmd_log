@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.syr" 
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.syr" 

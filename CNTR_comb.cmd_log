@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_comb.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_comb.syr" 

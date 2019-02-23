@@ -1,0 +1,1627 @@
+Release 13.1 - xst O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Toplevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Toplevel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Toplevel"
+Output Format                      : NGC
+Target Device                      : xc3s2000-5-fg456
+
+---- Source Options
+Top Module Name                    : Toplevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/atpg_counter.vhd" in Library work.
+Architecture behavioral of Entity atpg_counter is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/rom.vhd" in Library work.
+Architecture arch of Entity rom is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/counter.vhd" in Library work.
+Architecture behv of Entity counter is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/lfsr.vhd" in Library work.
+Architecture modular of Entity lfsr is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_lfsr.vhd" in Library work.
+Architecture stractural of Entity mult_lfsr is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_dtrm.vhd" in Library work.
+Architecture stractural of Entity mult_dtrm is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_atpg.vhd" in Library work.
+Architecture behavioral of Entity mult_atpg is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_x64.vhd" in Library work.
+Architecture structural of Entity mux_4to1_x64 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_32x32.vhd" in Library work.
+Architecture behavioral of Entity mult_32x32 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/misr.vhd" in Library work.
+Architecture modular of Entity misr is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/addsub32x.vhd" in Library work.
+Architecture structural of Entity addsub32x is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/LU.vhd" in Library work.
+Architecture structural of Entity lu is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_32x.vhd" in Library work.
+Architecture structural of Entity mux4to1_32x is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/OR_tree.vhd" in Library work.
+Architecture structural of Entity or_tree is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SLT.vhd" in Library work.
+Architecture behavioral of Entity slt is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SHIFT.vhd" in Library work.
+Architecture behavioral of Entity shift is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_0.vhd" in Library work.
+Architecture syn of Entity spdistram32_0 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_1.vhd" in Library work.
+Architecture syn of Entity spdistram32_1 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_2.vhd" in Library work.
+Architecture syn of Entity spdistram32_2 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_3.vhd" in Library work.
+Architecture syn of Entity spdistram32_3 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_2kx8.vhd" in Library work.
+Architecture syn of Entity spdistram is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/R32we.vhd" in Library work.
+Architecture behavioral of Entity r32we is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/INC.vhd" in Library work.
+Architecture behavioral of Entity inc is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/R32.vhd" in Library work.
+Architecture behavioral of Entity r32 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/reg_file_block.vhd" in Library work.
+Architecture regfile_block of Entity regfile_bl is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/EXT_sz.vhd" in Library work.
+Architecture behavioral of Entity ext_sz is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_aux.vhd" in Library work.
+Architecture structural of Entity cntr_aux is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SL2.vhd" in Library work.
+Architecture structural of Entity sl2 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_2to1_32x.vhd" in Library work.
+Architecture structural of Entity mux_2to1_32x is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ADD32bit.vhd" in Library work.
+Architecture behavioral of Entity add32bit is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/BUS32_aux.vhd" in Library work.
+Architecture structural of Entity bus32_aux is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DFF.vhd" in Library work.
+Architecture behavioral of Entity dff is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/XOR32bit.vhd" in Library work.
+Architecture behavioral of Entity xor32bit is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/AND2bit.vhd" in Library work.
+Architecture behavioral of Entity and2bit is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/MUX3to1x32bit.vhd" in Library work.
+Architecture behavioral of Entity mux3to1x32bit is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DFT_Mult.vhd" in Library work.
+Architecture stractural of Entity dft_mult is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_5to1_32x.vhd" in Library work.
+Architecture behavioral of Entity mux_5to1_32x is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_comp.vhd" in Library work.
+Architecture behavioral of Entity cntr_comb is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_fsm.vhd" in Library work.
+Architecture behavioral of Entity cntr_fsm is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/datapath.vhd" in Library work.
+Architecture behavioral of Entity datapath is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DMEM.vhd" in Library work.
+Architecture structural of Entity dmem is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" in Library work.
+Architecture structural of Entity imem is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/toplevel.vhd" in Library work.
+Architecture behavioral of Entity toplevel is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BUS32_aux> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <CNTR_comb> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CNTR_Fsm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <datapath> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dmem> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <IMEM> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <R32we> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <INC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <R32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Regfile_bl> in library <work> (architecture <regfile_block>).
+
+Analyzing hierarchy for entity <EXT_sz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CNTR_aux> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <SL2> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux_2to1_32x> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <ADD32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BUS32_aux> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <DFF> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <XOR32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <AND2bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX3to1x32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DFT_Mult> in library <work> (architecture <stractural>).
+
+Analyzing hierarchy for entity <mux_5to1_32x> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BUS32_aux> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <BUS32_aux> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <spdistram> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <spdistram32_0> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <spdistram32_1> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <spdistram32_2> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <spdistram32_3> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <addsub32x> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <LU> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux4to1_32x> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <OR_tree> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <SLT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SHIFT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mult_lfsr> in library <work> (architecture <stractural>).
+
+Analyzing hierarchy for entity <mult_dtrm> in library <work> (architecture <stractural>).
+
+Analyzing hierarchy for entity <mult_atpg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux_4to1_x64> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mult_32x32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <misr> in library <work> (architecture <modular>).
+
+Analyzing hierarchy for entity <LFSR> in library <work> (architecture <modular>).
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <behv>) with generics.
+	n = 8
+
+Analyzing hierarchy for entity <atpg_counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rom> in library <work> (architecture <arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Toplevel> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/toplevel.vhd" line 238: Unconnected output port 'NE' of component 'datapath'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/toplevel.vhd" line 238: Unconnected output port 'CO' of component 'datapath'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/toplevel.vhd" line 238: Unconnected output port 'OFL' of component 'datapath'.
+Entity <Toplevel> analyzed. Unit <Toplevel> generated.
+
+Analyzing Entity <BUS32_aux> in library <work> (Architecture <structural>).
+Entity <BUS32_aux> analyzed. Unit <BUS32_aux> generated.
+
+Analyzing Entity <CNTR_comb> in library <work> (Architecture <behavioral>).
+Entity <CNTR_comb> analyzed. Unit <CNTR_comb> generated.
+
+Analyzing Entity <CNTR_Fsm> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_fsm.vhd" line 87: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <stall_signal>
+Entity <CNTR_Fsm> analyzed. Unit <CNTR_Fsm> generated.
+
+Analyzing Entity <datapath> in library <work> (Architecture <behavioral>).
+Entity <datapath> analyzed. Unit <datapath> generated.
+
+Analyzing Entity <R32we> in library <work> (Architecture <behavioral>).
+Entity <R32we> analyzed. Unit <R32we> generated.
+
+Analyzing Entity <INC> in library <work> (Architecture <behavioral>).
+Entity <INC> analyzed. Unit <INC> generated.
+
+Analyzing Entity <R32> in library <work> (Architecture <behavioral>).
+Entity <R32> analyzed. Unit <R32> generated.
+
+Analyzing Entity <Regfile_bl> in library <work> (Architecture <regfile_block>).
+Entity <Regfile_bl> analyzed. Unit <Regfile_bl> generated.
+
+Analyzing Entity <EXT_sz> in library <work> (Architecture <behavioral>).
+Entity <EXT_sz> analyzed. Unit <EXT_sz> generated.
+
+Analyzing Entity <CNTR_aux> in library <work> (Architecture <structural>).
+Entity <CNTR_aux> analyzed. Unit <CNTR_aux> generated.
+
+Analyzing Entity <SL2> in library <work> (Architecture <structural>).
+Entity <SL2> analyzed. Unit <SL2> generated.
+
+Analyzing Entity <mux_2to1_32x> in library <work> (Architecture <structural>).
+Entity <mux_2to1_32x> analyzed. Unit <mux_2to1_32x> generated.
+
+Analyzing Entity <ADD32bit> in library <work> (Architecture <behavioral>).
+Entity <ADD32bit> analyzed. Unit <ADD32bit> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <addsub32x> in library <work> (Architecture <structural>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/addsub32x.vhd" line 38: Mux is complete : default of case is discarded
+Entity <addsub32x> analyzed. Unit <addsub32x> generated.
+
+Analyzing Entity <LU> in library <work> (Architecture <structural>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/LU.vhd" line 41: Mux is complete : default of case is discarded
+Entity <LU> analyzed. Unit <LU> generated.
+
+Analyzing Entity <mux4to1_32x> in library <work> (Architecture <structural>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_32x.vhd" line 41: Mux is complete : default of case is discarded
+Entity <mux4to1_32x> analyzed. Unit <mux4to1_32x> generated.
+
+Analyzing Entity <OR_tree> in library <work> (Architecture <structural>).
+Entity <OR_tree> analyzed. Unit <OR_tree> generated.
+
+Analyzing Entity <SLT> in library <work> (Architecture <behavioral>).
+Entity <SLT> analyzed. Unit <SLT> generated.
+
+Analyzing Entity <SHIFT> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SHIFT.vhd" line 62: Mux is complete : default of case is discarded
+Entity <SHIFT> analyzed. Unit <SHIFT> generated.
+
+Analyzing Entity <DFF> in library <work> (Architecture <behavioral>).
+Entity <DFF> analyzed. Unit <DFF> generated.
+
+Analyzing Entity <XOR32bit> in library <work> (Architecture <behavioral>).
+Entity <XOR32bit> analyzed. Unit <XOR32bit> generated.
+
+Analyzing Entity <AND2bit> in library <work> (Architecture <behavioral>).
+Entity <AND2bit> analyzed. Unit <AND2bit> generated.
+
+Analyzing Entity <MUX3to1x32bit> in library <work> (Architecture <behavioral>).
+Entity <MUX3to1x32bit> analyzed. Unit <MUX3to1x32bit> generated.
+
+Analyzing Entity <DFT_Mult> in library <work> (Architecture <stractural>).
+Entity <DFT_Mult> analyzed. Unit <DFT_Mult> generated.
+
+Analyzing Entity <mult_lfsr> in library <work> (Architecture <stractural>).
+Entity <mult_lfsr> analyzed. Unit <mult_lfsr> generated.
+
+Analyzing Entity <LFSR> in library <work> (Architecture <modular>).
+Entity <LFSR> analyzed. Unit <LFSR> generated.
+
+Analyzing Entity <mult_dtrm> in library <work> (Architecture <stractural>).
+Entity <mult_dtrm> analyzed. Unit <mult_dtrm> generated.
+
+Analyzing generic Entity <counter> in library <work> (Architecture <behv>).
+	n = 8
+Entity <counter> analyzed. Unit <counter> generated.
+
+Analyzing Entity <mult_atpg> in library <work> (Architecture <behavioral>).
+Entity <mult_atpg> analyzed. Unit <mult_atpg> generated.
+
+Analyzing Entity <atpg_counter> in library <work> (Architecture <behavioral>).
+Entity <atpg_counter> analyzed. Unit <atpg_counter> generated.
+
+Analyzing Entity <rom> in library <work> (Architecture <arch>).
+Entity <rom> analyzed. Unit <rom> generated.
+
+Analyzing Entity <mux_4to1_x64> in library <work> (Architecture <structural>).
+Entity <mux_4to1_x64> analyzed. Unit <mux_4to1_x64> generated.
+
+Analyzing Entity <mult_32x32> in library <work> (Architecture <behavioral>).
+Entity <mult_32x32> analyzed. Unit <mult_32x32> generated.
+
+Analyzing Entity <misr> in library <work> (Architecture <modular>).
+Entity <misr> analyzed. Unit <misr> generated.
+
+Analyzing Entity <mux_5to1_32x> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_5to1_32x.vhd" line 46: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_5to1_32x.vhd" line 46: Mux is complete : default of case is discarded
+Entity <mux_5to1_32x> analyzed. Unit <mux_5to1_32x> generated.
+
+Analyzing Entity <dmem> in library <work> (Architecture <structural>).
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DMEM.vhd" line 40: Unconnected output port 'dop' of component 'spdistram'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DMEM.vhd" line 40: Unconnected output port 'dop' of component 'spdistram'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DMEM.vhd" line 40: Unconnected output port 'dop' of component 'spdistram'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DMEM.vhd" line 40: Unconnected output port 'dop' of component 'spdistram'.
+Entity <dmem> analyzed. Unit <dmem> generated.
+
+Analyzing Entity <spdistram> in library <work> (Architecture <syn>).
+    Set user-defined property "INIT =  000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "SRVAL =  000000000" for instance <RAMB16_S9_inst> in unit <spdistram>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <RAMB16_S9_inst> in unit <spdistram>.
+Entity <spdistram> analyzed. Unit <spdistram> generated.
+
+Analyzing Entity <IMEM> in library <work> (Architecture <structural>).
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" line 79: Unconnected output port 'dop' of component 'spdistram32_0'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" line 90: Unconnected output port 'dop' of component 'spdistram32_1'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" line 101: Unconnected output port 'dop' of component 'spdistram32_2'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" line 112: Unconnected output port 'dop' of component 'spdistram32_3'.
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" line 130: Mux is complete : default of case is discarded
+Entity <IMEM> analyzed. Unit <IMEM> generated.
+
+Analyzing Entity <spdistram32_0> in library <work> (Architecture <syn>).
+    Set user-defined property "INIT =  000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_00 =  2528FFFC21690001000040120230001824100003256CFFFE24110006250B0008" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_01 =  01239006014B4826130C00120189C025012D7824016C7022390D00158D390000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_02 =  012C60040018C40002A000110280001300004810025300188DB300008DF20000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_03 =  0330682001D7B02A163100042A75002401AC800700094883000B5880000C6082" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_04 =  024B9826026A502502CF582402AE78223ACE001522AE00013408001401400008" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000333F0060340F809" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3F =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "SRVAL =  000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <Rinst> in unit <spdistram32_0>.
+Entity <spdistram32_0> analyzed. Unit <spdistram32_0> generated.
+
+Analyzing Entity <spdistram32_1> in library <work> (Architecture <syn>).
+    Set user-defined property "INIT =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_00 =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3F =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "SRVAL =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+Entity <spdistram32_1> analyzed. Unit <spdistram32_1> generated.
+
+Analyzing Entity <spdistram32_2> in library <work> (Architecture <syn>).
+    Set user-defined property "INIT =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_00 =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3F =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "SRVAL =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+Entity <spdistram32_2> analyzed. Unit <spdistram32_2> generated.
+
+Analyzing Entity <spdistram32_3> in library <work> (Architecture <syn>).
+    Set user-defined property "INIT =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_00 =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3F =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "SRVAL =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+Entity <spdistram32_3> analyzed. Unit <spdistram32_3> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <BUS32_aux>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/BUS32_aux.vhd".
+Unit <BUS32_aux> synthesized.
+
+
+Synthesizing Unit <CNTR_comb>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_comp.vhd".
+Unit <CNTR_comb> synthesized.
+
+
+Synthesizing Unit <CNTR_Fsm>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_fsm.vhd".
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 77                                             |
+    | Inputs             | 36                                             |
+    | Outputs            | 16                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | current_state$or0000      (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <CNTR_Fsm> synthesized.
+
+
+Synthesizing Unit <R32we>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/R32we.vhd".
+    Found 32-bit register for signal <D_out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <R32we> synthesized.
+
+
+Synthesizing Unit <INC>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/INC.vhd".
+    Found 32-bit adder for signal <NPC>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <INC> synthesized.
+
+
+Synthesizing Unit <R32>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/R32.vhd".
+    Found 32-bit register for signal <D_out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <R32> synthesized.
+
+
+Synthesizing Unit <Regfile_bl>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/reg_file_block.vhd".
+    Found 32x32-bit dual-port RAM <Mram_Regfile_Coff> for signal <Regfile_Coff>.
+    Found 32x32-bit dual-port RAM <Mram_Regfile_Coff_ren> for signal <Regfile_Coff>.
+    Found 32-bit register for signal <Bus_A>.
+    Found 32-bit register for signal <Bus_B>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  64 D-type flip-flop(s).
+Unit <Regfile_bl> synthesized.
+
+
+Synthesizing Unit <EXT_sz>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/EXT_sz.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <I>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <EXT_sz> synthesized.
+
+
+Synthesizing Unit <CNTR_aux>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_aux.vhd".
+Unit <CNTR_aux> synthesized.
+
+
+Synthesizing Unit <SL2>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SL2.vhd".
+WARNING:Xst:647 - Input <I<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <SL2> synthesized.
+
+
+Synthesizing Unit <mux_2to1_32x>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_2to1_32x.vhd".
+Unit <mux_2to1_32x> synthesized.
+
+
+Synthesizing Unit <ADD32bit>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ADD32bit.vhd".
+    Found 32-bit adder for signal <Output>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADD32bit> synthesized.
+
+
+Synthesizing Unit <DFF>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DFF.vhd".
+    Found 1-bit register for signal <Outp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <DFF> synthesized.
+
+
+Synthesizing Unit <XOR32bit>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/XOR32bit.vhd".
+    Found 1-bit xor2 for signal <Outp>.
+Unit <XOR32bit> synthesized.
+
+
+Synthesizing Unit <AND2bit>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/AND2bit.vhd".
+Unit <AND2bit> synthesized.
+
+
+Synthesizing Unit <MUX3to1x32bit>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/MUX3to1x32bit.vhd".
+Unit <MUX3to1x32bit> synthesized.
+
+
+Synthesizing Unit <mux_5to1_32x>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_5to1_32x.vhd".
+Unit <mux_5to1_32x> synthesized.
+
+
+Synthesizing Unit <addsub32x>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/addsub32x.vhd".
+    Found 32-bit addsub for signal <S0>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addsub32x> synthesized.
+
+
+Synthesizing Unit <LU>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/LU.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <OUTa>.
+    Found 32-bit xor2 for signal <OUTa$xor0000> created at line 40.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <LU> synthesized.
+
+
+Synthesizing Unit <mux4to1_32x>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_32x.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <O>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <mux4to1_32x> synthesized.
+
+
+Synthesizing Unit <OR_tree>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/OR_tree.vhd".
+Unit <OR_tree> synthesized.
+
+
+Synthesizing Unit <SLT>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SLT.vhd".
+Unit <SLT> synthesized.
+
+
+Synthesizing Unit <SHIFT>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SHIFT.vhd".
+WARNING:Xst:647 - Input <INa<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <lui_en> is used but never assigned. This sourceless signal will be automatically connected to value 10000.
+    Found 32-bit 4-to-1 multiplexer for signal <OUTa>.
+    Found 32-bit shifter logical left for signal <OUTa$shift0003> created at line 59.
+    Found 32-bit shifter logical right for signal <OUTa$shift0004> created at line 61.
+    Found 32-bit shifter arithmetic right for signal <OUTa$shift0005> created at line 62.
+    Summary:
+	inferred  32 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <SHIFT> synthesized.
+
+
+Synthesizing Unit <mux_4to1_x64>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_x64.vhd".
+    Found 64-bit 4-to-1 multiplexer for signal <Outp>.
+    Summary:
+	inferred  64 Multiplexer(s).
+Unit <mux_4to1_x64> synthesized.
+
+
+Synthesizing Unit <mult_32x32>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_32x32.vhd".
+    Found 32x32-bit multiplier for signal <Puns>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <mult_32x32> synthesized.
+
+
+Synthesizing Unit <misr>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/misr.vhd".
+    Found 64-bit register for signal <misr_reg>.
+    Found 1-bit xor4 for signal <misr_reg$xor0000> created at line 27.
+    Found 64-bit xor2 for signal <misr_reg$xor0001> created at line 28.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <misr> synthesized.
+
+
+Synthesizing Unit <LFSR>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/lfsr.vhd".
+    Found 64-bit register for signal <lfsr_reg>.
+    Found 1-bit xor4 for signal <lfsr_reg$xor0000> created at line 26.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <LFSR> synthesized.
+
+
+Synthesizing Unit <counter>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/counter.vhd".
+    Found 8-bit up counter for signal <Pre_Q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <atpg_counter>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/atpg_counter.vhd".
+    Found 7-bit up counter for signal <count_int>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <atpg_counter> synthesized.
+
+
+Synthesizing Unit <rom>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/rom.vhd".
+    Found 128x64-bit ROM for signal <data>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <rom> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ALU.vhd".
+WARNING:Xst:646 - Signal <ALUop_S<3:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <mult_lfsr>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_lfsr.vhd".
+Unit <mult_lfsr> synthesized.
+
+
+Synthesizing Unit <mult_dtrm>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_dtrm.vhd".
+Unit <mult_dtrm> synthesized.
+
+
+Synthesizing Unit <mult_atpg>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_atpg.vhd".
+Unit <mult_atpg> synthesized.
+
+
+Synthesizing Unit <spdistram>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_2kx8.vhd".
+Unit <spdistram> synthesized.
+
+
+Synthesizing Unit <spdistram32_0>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_0.vhd".
+Unit <spdistram32_0> synthesized.
+
+
+Synthesizing Unit <spdistram32_1>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_1.vhd".
+Unit <spdistram32_1> synthesized.
+
+
+Synthesizing Unit <spdistram32_2>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_2.vhd".
+Unit <spdistram32_2> synthesized.
+
+
+Synthesizing Unit <spdistram32_3>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_3.vhd".
+Unit <spdistram32_3> synthesized.
+
+
+Synthesizing Unit <dmem>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DMEM.vhd".
+Unit <dmem> synthesized.
+
+
+Synthesizing Unit <IMEM>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd".
+    Found 1-of-4 decoder for signal <sl>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <IMEM> synthesized.
+
+
+Synthesizing Unit <DFT_Mult>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DFT_Mult.vhd".
+Unit <DFT_Mult> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/datapath.vhd".
+WARNING:Xst:1305 - Output <CO> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <NE> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <OFL> is never assigned. Tied to value 0.
+WARNING:Xst:1780 - Signal <w_CountOut> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <w_BUSALU> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <datapath> synthesized.
+
+
+Synthesizing Unit <Toplevel>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/toplevel.vhd".
+WARNING:Xst:1780 - Signal <w_AUXout_4> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <w_AUXout_3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <w_AUXout_2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <w_AUXout_1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <Toplevel> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+WARNING:Xst:524 - All outputs of the instance <RegALUout> of the block <R32> are unconnected in block <datapath>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# ROMs                                                 : 1
+ 128x64-bit ROM                                        : 1
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Counters                                             : 2
+ 7-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 16
+ 1-bit register                                        : 1
+ 32-bit register                                       : 13
+ 64-bit register                                       : 2
+# Multiplexers                                         : 5
+ 32-bit 4-to-1 multiplexer                             : 4
+ 64-bit 4-to-1 multiplexer                             : 1
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 1
+ 1-bit xor4                                            : 2
+ 32-bit xor2                                           : 1
+ 64-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <FSM_Control/current_state/FSM> on signal <current_state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 0000
+ s1    | 0001
+ s2a   | 0010
+ s2b   | 0011
+ s3    | 0100
+ s4a   | 0101
+ s4b   | 0110
+ s4c   | 0111
+ s4d   | 1000
+ s4e   | 1001
+-------------------
+
+Synthesizing (advanced) Unit <Regfile_bl>.
+INFO:Xst:3226 - The RAM <Mram_Regfile_Coff> will be implemented as a BLOCK RAM, absorbing the following register(s): <Bus_A>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <Addr_in>       |          |
+    |     diA            | connected to signal <Bus_W>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clk>           | rise     |
+    |     addrB          | connected to signal <rs>            |          |
+    |     doB            | connected to signal <Bus_A>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_Regfile_Coff_ren> will be implemented as a BLOCK RAM, absorbing the following register(s): <Bus_B>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <Addr_in>       |          |
+    |     diA            | connected to signal <Bus_W>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clk>           | rise     |
+    |     addrB          | connected to signal <rt>            |          |
+    |     doB            | connected to signal <Bus_B>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Regfile_bl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 2
+ 32x32-bit dual-port block RAM                         : 2
+# ROMs                                                 : 1
+ 128x64-bit ROM                                        : 1
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Counters                                             : 2
+ 7-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 481
+ Flip-Flops                                            : 481
+# Multiplexers                                         : 5
+ 32-bit 4-to-1 multiplexer                             : 4
+ 64-bit 4-to-1 multiplexer                             : 1
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 1
+ 1-bit xor4                                            : 2
+ 32-bit xor2                                           : 1
+ 64-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance RI_0/Rinst in unit RI_0/Rinst of type RAMB16_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance RI_1/RAMB16BWE_S36_inst in unit RI_1/RAMB16BWE_S36_inst of type RAMB16_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance RI_2/RAMB16BWE_S36_inst in unit RI_2/RAMB16BWE_S36_inst of type RAMB16_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance RI_3/RAMB16BWE_S36_inst in unit RI_3/RAMB16BWE_S36_inst of type RAMB16_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance DATAMEMORY/R[0].RI/RAMB16_S9_inst in unit DATAMEMORY/R[0].RI/RAMB16_S9_inst of type RAMB16_S9 has been replaced by RAMB16
+INFO:Xst:1901 - Instance DATAMEMORY/R[1].RI/RAMB16_S9_inst in unit DATAMEMORY/R[1].RI/RAMB16_S9_inst of type RAMB16_S9 has been replaced by RAMB16
+INFO:Xst:1901 - Instance DATAMEMORY/R[2].RI/RAMB16_S9_inst in unit DATAMEMORY/R[2].RI/RAMB16_S9_inst of type RAMB16_S9 has been replaced by RAMB16
+INFO:Xst:1901 - Instance DATAMEMORY/R[3].RI/RAMB16_S9_inst in unit DATAMEMORY/R[3].RI/RAMB16_S9_inst of type RAMB16_S9 has been replaced by RAMB16
+
+Optimizing unit <Toplevel> ...
+
+Optimizing unit <CNTR_Fsm> ...
+
+Optimizing unit <R32we> ...
+
+Optimizing unit <R32> ...
+
+Optimizing unit <Regfile_bl> ...
+
+Optimizing unit <LU> ...
+
+Optimizing unit <SHIFT> ...
+
+Optimizing unit <misr> ...
+
+Optimizing unit <LFSR> ...
+
+Optimizing unit <IMEM> ...
+
+Optimizing unit <datapath> ...
+WARNING:Xst:2716 - In unit Toplevel, both signals w_DEMwrite<3> and w_DEMwrite<0> have a KEEP attribute, signal w_DEMwrite<0> will be lost.
+WARNING:Xst:2716 - In unit Toplevel, both signals w_DEMwrite<2> and w_DEMwrite<0> have a KEEP attribute, signal w_DEMwrite<0> will be lost.
+WARNING:Xst:2716 - In unit Toplevel, both signals w_DEMwrite<1> and w_DEMwrite<0> have a KEEP attribute, signal w_DEMwrite<0> will be lost.
+WARNING:Xst:1303 - From in and out of unit INSTRUCTIONMEMORY, both signals clk and CLK have a KEEP attribute, signal clk will be lost.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <datapath_module/I/D_out_16> in Unit <Toplevel> is equivalent to the following 15 FFs/Latches, which will be removed : <datapath_module/I/D_out_17> <datapath_module/I/D_out_18> <datapath_module/I/D_out_19> <datapath_module/I/D_out_20> <datapath_module/I/D_out_21> <datapath_module/I/D_out_22> <datapath_module/I/D_out_23> <datapath_module/I/D_out_24> <datapath_module/I/D_out_25> <datapath_module/I/D_out_26> <datapath_module/I/D_out_27> <datapath_module/I/D_out_28> <datapath_module/I/D_out_29> <datapath_module/I/D_out_30> <datapath_module/I/D_out_31> 
+Found area constraint ratio of 100 (+ 5) on block Toplevel, actual ratio is 6.
+FlipFlop datapath_module/IR/D_out_0 has been replicated 1 time(s)
+FlipFlop datapath_module/IR/D_out_3 has been replicated 1 time(s)
+FlipFlop datapath_module/MULTIPLY/ATPG/ADDRSS/count_int_1 has been replicated 11 time(s)
+FlipFlop datapath_module/MULTIPLY/ATPG/ADDRSS/count_int_2 has been replicated 9 time(s)
+FlipFlop datapath_module/MULTIPLY/ATPG/ADDRSS/count_int_3 has been replicated 10 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 517
+ Flip-Flops                                            : 517
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Toplevel.ngr
+Top Level Output File Name         : Toplevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 261
+
+Cell Usage :
+# BELS                             : 2697
+#      GND                         : 11
+#      INV                         : 3
+#      LUT1                        : 49
+#      LUT2                        : 122
+#      LUT2_D                      : 3
+#      LUT2_L                      : 7
+#      LUT3                        : 621
+#      LUT3_D                      : 86
+#      LUT3_L                      : 9
+#      LUT4                        : 977
+#      LUT4_D                      : 21
+#      LUT4_L                      : 101
+#      MUXCY                       : 182
+#      MUXF5                       : 325
+#      VCC                         : 1
+#      XORCY                       : 179
+# FlipFlops/Latches                : 517
+#      FD                          : 65
+#      FDC                         : 226
+#      FDCE                        : 162
+#      FDR                         : 42
+#      FDS                         : 22
+# RAMS                             : 10
+#      RAMB16                      : 10
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 260
+#      IBUF                        : 3
+#      OBUF                        : 257
+# MULTs                            : 4
+#      MULT18X18                   : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s2000fg456-5 
+
+ Number of Slices:                     1053  out of  20480     5%  
+ Number of Slice Flip Flops:            517  out of  40960     1%  
+ Number of 4 input LUTs:               1999  out of  40960     4%  
+ Number of IOs:                         261
+ Number of bonded IOBs:                 261  out of    333    78%  
+ Number of BRAMs:                        10  out of     40    25%  
+ Number of MULT18X18s:                    4  out of     40    10%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 527   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------+-----------------------------------------+-------+
+Control Signal                                                       | Buffer(FF name)                         | Load  |
+---------------------------------------------------------------------+-----------------------------------------+-------+
+RESET                                                                | IBUF                                    | 384   |
+FSM_Control/current_state_or0000(FSM_Control/current_state_or00001:O)| NONE(FSM_Control/current_state_FSM_FFd1)| 4     |
+---------------------------------------------------------------------+-----------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 20.726ns (Maximum Frequency: 48.248MHz)
+   Minimum input arrival time before clock: 20.472ns
+   Maximum output required time after clock: 23.851ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 20.726ns (frequency: 48.248MHz)
+  Total number of paths / destination ports: 121496840 / 785
+-------------------------------------------------------------------------
+Delay:               20.726ns (Levels of Logic = 27)
+  Source:            datapath_module/MULTIPLY/ATPG/ADDRSS/count_int_0 (FF)
+  Destination:       datapath_module/MULTIPLY/MSR/misr_reg_63 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: datapath_module/MULTIPLY/ATPG/ADDRSS/count_int_0 to datapath_module/MULTIPLY/MSR/misr_reg_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            349   0.626   3.142  datapath_module/MULTIPLY/ATPG/ADDRSS/count_int_0 (datapath_module/MULTIPLY/ATPG/ADDRSS/count_int_0)
+     LUT4:I3->O            2   0.479   0.915  datapath_module/MULTIPLY/ATPG/DATA/Mrom_data5611 (datapath_module/MULTIPLY/ATPG/DATA/Mrom_data325)
+     LUT3:I1->O            1   0.479   0.000  datapath_module/MULTIPLY/MUX/Mmux_Outp_10_f5_40_G (N1135)
+     MUXF5:I1->O           1   0.314   0.704  datapath_module/MULTIPLY/MUX/Mmux_Outp_10_f5_40 (datapath_module/MULTIPLY/MUX/Mmux_Outp_10_f541)
+     LUT4:I3->O            1   0.479   0.681  datapath_module/MULTIPLY/ATPG/add_signal<6>41 (datapath_module/MULTIPLY/ATPG/add_signal<6>42)
+     MUXF5:S->O            2   0.540   0.745  datapath_module/MULTIPLY/muxout_signal<47>_inv1 (datapath_module/MULTIPLY/muxout_signal<47>)
+     MULT18X18:B15->P30    1   4.159   0.976  datapath_module/MULTIPLY/MULTI/Mmult_Puns_submult_2 (datapath_module/MULTIPLY/MULTI/Mmult_Puns_submult_2_30)
+     LUT2:I0->O            1   0.479   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_lut<32> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_lut<32>)
+     MUXCY:S->O            1   0.435   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_cy<32> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_cy<32>)
+     XORCY:CI->O           1   0.786   0.851  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_xor<33> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_48)
+     LUT2:I1->O            1   0.479   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_lut<48> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_lut<48>)
+     MUXCY:S->O            1   0.435   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<48> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<48>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<49> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<49>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<50> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<50>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<51> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<51>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<52> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<52>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<53> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<53>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<54> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<54>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<55> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<55>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<56> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<56>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<57> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<57>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<58> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<58>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<59> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<59>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<60> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<60>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<61> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<61>)
+     MUXCY:CI->O           0   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<62> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<62>)
+     XORCY:CI->O           2   0.786   0.804  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_xor<63> (datapath_module/w_MULTIout<63>)
+     LUT3:I2->O            1   0.479   0.000  datapath_module/MULHIMUX/O<31>1 (datapath_module/w_HiMuxtoReg<31>)
+     FDCE:D                    0.176          datapath_module/Reg_HI/D_out_31
+    ----------------------------------------
+    Total                     20.726ns (11.908ns logic, 8.818ns route)
+                                       (57.5% logic, 42.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 23667194 / 192
+-------------------------------------------------------------------------
+Offset:              20.472ns (Levels of Logic = 28)
+  Source:            TEST_SEL<0> (PAD)
+  Destination:       datapath_module/MULTIPLY/MSR/misr_reg_63 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: TEST_SEL<0> to datapath_module/MULTIPLY/MSR/misr_reg_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           195   0.715   2.664  TEST_SEL_0_IBUF (TEST_SEL_0_IBUF)
+     LUT3_D:I0->O          1   0.479   0.704  datapath_module/MULTIPLY/MUX/Mmux_Outp_413 (datapath_module/MULTIPLY/MUX/Mmux_Outp_413)
+     LUT4:I3->O            3   0.479   0.941  datapath_module/MULTIPLY/MUX/Mmux_Outp_313_SW1 (N596)
+     LUT4:I1->O            1   0.479   0.000  datapath_module/MULTIPLY/ATPG/add_signal<6>1351_SW0_F (N1880)
+     MUXF5:I0->O           1   0.314   0.851  datapath_module/MULTIPLY/ATPG/add_signal<6>1351_SW0 (N1003)
+     LUT3:I1->O            2   0.479   0.745  datapath_module/MULTIPLY/muxout_signal<21>_inv1 (datapath_module/MULTIPLY/muxout_signal<21>)
+     MULT18X18:A4->P30     1   4.159   0.976  datapath_module/MULTIPLY/MULTI/Mmult_Puns_submult_2 (datapath_module/MULTIPLY/MULTI/Mmult_Puns_submult_2_30)
+     LUT2:I0->O            1   0.479   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_lut<32> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_lut<32>)
+     MUXCY:S->O            1   0.435   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_cy<32> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_cy<32>)
+     XORCY:CI->O           1   0.786   0.851  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_xor<33> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd_48)
+     LUT2:I1->O            1   0.479   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_lut<48> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_lut<48>)
+     MUXCY:S->O            1   0.435   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<48> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<48>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<49> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<49>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<50> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<50>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<51> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<51>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<52> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<52>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<53> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<53>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<54> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<54>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<55> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<55>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<56> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<56>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<57> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<57>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<58> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<58>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<59> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<59>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<60> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<60>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<61> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<61>)
+     MUXCY:CI->O           0   0.056   0.000  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<62> (datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<62>)
+     XORCY:CI->O           2   0.786   0.804  datapath_module/MULTIPLY/MULTI/Mmult_Puns_Madd1_xor<63> (datapath_module/w_MULTIout<63>)
+     LUT3:I2->O            1   0.479   0.000  datapath_module/MULHIMUX/O<31>1 (datapath_module/w_HiMuxtoReg<31>)
+     FDCE:D                    0.176          datapath_module/Reg_HI/D_out_31
+    ----------------------------------------
+    Total                     20.472ns (11.936ns logic, 8.536ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 274491 / 225
+-------------------------------------------------------------------------
+Offset:              23.851ns (Levels of Logic = 24)
+  Source:            datapath_module/IR/D_out_4 (FF)
+  Destination:       ZERO (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: datapath_module/IR/D_out_4 to ZERO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            19   0.626   1.403  datapath_module/IR/D_out_4 (datapath_module/IR/D_out_4)
+     LUT4:I1->O            1   0.479   0.000  Comp_Control/RorI21_F (N1876)
+     MUXF5:I0->O           3   0.314   0.794  Comp_Control/RorI21 (N111)
+     LUT4:I3->O            2   0.479   0.768  Comp_Control/BorI22 (Comp_Control/BorI22)
+     LUT4_D:I3->O          7   0.479   0.965  Comp_Control/BorI53_1 (Comp_Control/BorI53)
+     LUT3_D:I2->O         34   0.479   1.644  datapath_module/BorImux/O<31>1 (datapath_module/w_MuxtoALU<31>)
+     LUT3:I2->O            1   0.479   0.000  datapath_module/AriLogUnit/P6/Sh124_G (N1263)
+     MUXF5:I1->O           7   0.314   1.076  datapath_module/AriLogUnit/P6/Sh124 (datapath_module/AriLogUnit/P6/Sh124)
+     LUT3:I1->O            3   0.479   0.830  datapath_module/AriLogUnit/P6/Sh14411 (datapath_module/AriLogUnit/P6/N8)
+     LUT3_L:I2->LO         1   0.479   0.159  datapath_module/AriLogUnit/P6/Sh2481 (datapath_module/AriLogUnit/P6/Sh248)
+     LUT3:I2->O            1   0.479   0.740  datapath_module/AriLogUnit/P6/Sh2641 (datapath_module/AriLogUnit/P6/Sh264)
+     LUT3:I2->O            1   0.479   0.000  datapath_module/AriLogUnit/P6/Mmux_OUTa_329 (datapath_module/AriLogUnit/P6/Mmux_OUTa_329)
+     MUXF5:I1->O           1   0.314   0.851  datapath_module/AriLogUnit/P6/Mmux_OUTa_2_f5_28 (datapath_module/AriLogUnit/Shift_out<8>)
+     LUT4:I1->O            1   0.479   0.000  datapath_module/AriLogUnit/P3/Mmux_O60_F (N1814)
+     MUXF5:I0->O           4   0.314   0.802  datapath_module/AriLogUnit/P3/Mmux_O60 (ALUout_8_OBUF)
+     LUT4:I3->O            1   0.479   0.000  datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_lut<0> (datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<0> (datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<1> (datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<2> (datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<3> (datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<4> (datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<5> (datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<6> (datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           2   0.246   0.745  datapath_module/AriLogUnit/P4/ORout_cmp_eq0000_wg_cy<7> (ZERO_OBUF)
+     OBUF:I->O                 4.909          ZERO_OBUF (ZERO)
+    ----------------------------------------
+    Total                     23.851ns (13.074ns logic, 10.778ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 48.00 secs
+Total CPU time to Xst completion: 47.75 secs
+ 
+--> 
+
+Total memory usage is 343812 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   30 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+

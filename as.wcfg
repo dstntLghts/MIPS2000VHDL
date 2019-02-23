@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Xhaar/Desktop/MIPS2000VHDL/Toplevel_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="toplevel_tb" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/toplevel_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/test_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">test_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">test_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/ir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ir[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ir[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/mdr_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mdr_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mdr_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/mar" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mar[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mar[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/w" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/aluout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/datapath_module/RegFile/regfile_coff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regfile_coff[0:31]</obj_property>
+      <obj_property name="ObjectShortName">regfile_coff[0:31]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

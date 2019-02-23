@@ -1,0 +1,660 @@
+Release 13.1 - xst O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: IMEM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "IMEM.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "IMEM"
+Output Format                      : NGC
+Target Device                      : xc3s4000-5-fg676
+
+---- Source Options
+Top Module Name                    : IMEM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_0.vhd" in Library work.
+Architecture syn of Entity spdistram32_0 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_1.vhd" in Library work.
+Architecture syn of Entity spdistram32_1 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_2.vhd" in Library work.
+Architecture syn of Entity spdistram32_2 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_3.vhd" in Library work.
+Architecture syn of Entity spdistram32_3 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" in Library work.
+Architecture structural of Entity imem is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <IMEM> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <spdistram32_0> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <spdistram32_1> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <spdistram32_2> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <spdistram32_3> in library <work> (architecture <syn>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <IMEM> in library <work> (Architecture <structural>).
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" line 79: Unconnected output port 'dop' of component 'spdistram32_0'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" line 90: Unconnected output port 'dop' of component 'spdistram32_1'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" line 101: Unconnected output port 'dop' of component 'spdistram32_2'.
+WARNING:Xst:753 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" line 112: Unconnected output port 'dop' of component 'spdistram32_3'.
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd" line 130: Mux is complete : default of case is discarded
+Entity <IMEM> analyzed. Unit <IMEM> generated.
+
+Analyzing Entity <spdistram32_0> in library <work> (Architecture <syn>).
+    Set user-defined property "INIT =  000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_00 =  00000000000000000000000002300018AD710000AD700000256C0002250B0008" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "INIT_3F =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "SRVAL =  000000000" for instance <Rinst> in unit <spdistram32_0>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <Rinst> in unit <spdistram32_0>.
+Entity <spdistram32_0> analyzed. Unit <spdistram32_0> generated.
+
+Analyzing Entity <spdistram32_1> in library <work> (Architecture <syn>).
+    Set user-defined property "INIT =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_00 =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "INIT_3F =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "SRVAL =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_1>.
+Entity <spdistram32_1> analyzed. Unit <spdistram32_1> generated.
+
+Analyzing Entity <spdistram32_2> in library <work> (Architecture <syn>).
+    Set user-defined property "INIT =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_00 =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "INIT_3F =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "SRVAL =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_2>.
+Entity <spdistram32_2> analyzed. Unit <spdistram32_2> generated.
+
+Analyzing Entity <spdistram32_3> in library <work> (Architecture <syn>).
+    Set user-defined property "INIT =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_00 =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "INIT_3F =  000000000000000000000000000000000000000000000000000000000000FFFF" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "SRVAL =  000000000" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <RAMB16BWE_S36_inst> in unit <spdistram32_3>.
+Entity <spdistram32_3> analyzed. Unit <spdistram32_3> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <spdistram32_0>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_0.vhd".
+Unit <spdistram32_0> synthesized.
+
+
+Synthesizing Unit <spdistram32_1>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_1.vhd".
+Unit <spdistram32_1> synthesized.
+
+
+Synthesizing Unit <spdistram32_2>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_2.vhd".
+Unit <spdistram32_2> synthesized.
+
+
+Synthesizing Unit <spdistram32_3>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/spdistram_512x32_3.vhd".
+Unit <spdistram32_3> synthesized.
+
+
+Synthesizing Unit <IMEM>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd".
+    Found 1-of-4 decoder for signal <sl>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <IMEM> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance RI_0/Rinst in unit RI_0/Rinst of type RAMB16_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance RI_1/RAMB16BWE_S36_inst in unit RI_1/RAMB16BWE_S36_inst of type RAMB16_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance RI_2/RAMB16BWE_S36_inst in unit RI_2/RAMB16BWE_S36_inst of type RAMB16_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance RI_3/RAMB16BWE_S36_inst in unit RI_3/RAMB16BWE_S36_inst of type RAMB16_S36 has been replaced by RAMB16
+
+Optimizing unit <IMEM> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block IMEM, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : IMEM.ngr
+Top Level Output File Name         : IMEM
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 45
+
+Cell Usage :
+# BELS                             : 41
+#      GND                         : 5
+#      LUT2                        : 4
+#      LUT4                        : 32
+# RAMS                             : 4
+#      RAMB16                      : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 44
+#      IBUF                        : 12
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s4000fg676-5 
+
+ Number of Slices:                       18  out of  27648     0%  
+ Number of 4 input LUTs:                 36  out of  55296     0%  
+ Number of IOs:                          45
+ Number of bonded IOBs:                  45  out of    489     9%  
+ Number of BRAMs:                         4  out of     96     4%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 4     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.381ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 48 / 44
+-------------------------------------------------------------------------
+Offset:              3.381ns (Levels of Logic = 3)
+  Source:            address<9> (PAD)
+  Destination:       RI_0/Rinst/RI_0/Rinst (RAM)
+  Destination Clock: clk rising
+
+  Data Path: address<9> to RI_0/Rinst/RI_0/Rinst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.715   1.074  address_9_IBUF (address_9_IBUF)
+     LUT2:I0->O            1   0.479   0.681  Mdecod_sl31 (sl<3>)
+     begin scope: 'RI_3/RAMB16BWE_S36_inst'
+     RAMB16:SSRA               0.432          RI_3/RAMB16BWE_S36_inst
+    ----------------------------------------
+    Total                      3.381ns (1.626ns logic, 1.755ns route)
+                                       (48.1% logic, 51.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.80 secs
+ 
+--> 
+
+Total memory usage is 250048 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

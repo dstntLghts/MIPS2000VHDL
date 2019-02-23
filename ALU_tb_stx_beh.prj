@@ -1,0 +1,8 @@
+vhdl isim_temp "SLT.vhd"
+vhdl isim_temp "SHIFT.vhd"
+vhdl isim_temp "OR_tree.vhd"
+vhdl isim_temp "mux_4to1_32x.vhd"
+vhdl isim_temp "LU.vhd"
+vhdl isim_temp "addsub32x.vhd"
+vhdl isim_temp "ALU.vhd"
+vhdl isim_temp "ALU_tb.vhd"

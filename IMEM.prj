@@ -1,0 +1,5 @@
+vhdl work "spdistram_512x32_3.vhd"
+vhdl work "spdistram_512x32_2.vhd"
+vhdl work "spdistram_512x32_1.vhd"
+vhdl work "spdistram_512x32_0.vhd"
+vhdl work "IMEM.vhd"

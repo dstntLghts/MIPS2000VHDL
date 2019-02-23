@@ -1,0 +1,411 @@
+Release 13.1 - xst O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: CNTR_fsm.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CNTR_fsm.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CNTR_fsm"
+Output Format                      : NGC
+Target Device                      : xc3s2000-5-fg456
+
+---- Source Options
+Top Module Name                    : CNTR_fsm
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_fsm.vhd" in Library work.
+Architecture behavioral of Entity cntr_fsm is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CNTR_fsm> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CNTR_fsm> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_fsm.vhd" line 87: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <stall_signal>
+Entity <CNTR_fsm> analyzed. Unit <CNTR_fsm> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CNTR_fsm>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_fsm.vhd".
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 77                                             |
+    | Inputs             | 36                                             |
+    | Outputs            | 16                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | current_state$or0000      (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <CNTR_fsm> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <current_state/FSM> on signal <current_state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 0000
+ s1    | 0001
+ s2a   | 0010
+ s2b   | 0011
+ s3    | 0100
+ s4a   | 0101
+ s4b   | 0110
+ s4c   | 0111
+ s4d   | 1000
+ s4e   | 1001
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <CNTR_fsm> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CNTR_fsm, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CNTR_fsm.ngr
+Top Level Output File Name         : CNTR_fsm
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 58
+#      LUT2                        : 6
+#      LUT2_D                      : 1
+#      LUT3                        : 16
+#      LUT4                        : 26
+#      LUT4_L                      : 3
+#      MUXF5                       : 6
+# FlipFlops/Latches                : 4
+#      FDC                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 14
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s2000fg456-5 
+
+ Number of Slices:                       29  out of  20480     0%  
+ Number of Slice Flip Flops:              4  out of  40960     0%  
+ Number of 4 input LUTs:                 52  out of  40960     0%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    333     6%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 4     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------+-----------------------------+-------+
+Control Signal                               | Buffer(FF name)             | Load  |
+---------------------------------------------+-----------------------------+-------+
+current_state_or0000(current_state_or00001:O)| NONE(current_state_FSM_FFd1)| 4     |
+---------------------------------------------+-----------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.271ns (Maximum Frequency: 189.732MHz)
+   Minimum input arrival time before clock: 9.735ns
+   Maximum output required time after clock: 8.083ns
+   Maximum combinational path delay: 10.721ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.271ns (frequency: 189.732MHz)
+  Total number of paths / destination ports: 42 / 4
+-------------------------------------------------------------------------
+Delay:               5.271ns (Levels of Logic = 4)
+  Source:            current_state_FSM_FFd4 (FF)
+  Destination:       current_state_FSM_FFd4 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: current_state_FSM_FFd4 to current_state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.626   1.245  current_state_FSM_FFd4 (current_state_FSM_FFd4)
+     LUT2_D:I0->O          2   0.479   0.768  current_state_FSM_FFd4-In107 (current_state_FSM_FFd4-In107)
+     LUT4:I3->O            1   0.479   0.000  current_state_FSM_FFd4-In110_SW1_G (N47)
+     MUXF5:I1->O           1   0.314   0.704  current_state_FSM_FFd4-In110_SW1 (N38)
+     LUT4:I3->O            1   0.479   0.000  current_state_FSM_FFd4-In277 (current_state_FSM_FFd4-In)
+     FDC:D                     0.176          current_state_FSM_FFd4
+    ----------------------------------------
+    Total                      5.271ns (2.553ns logic, 2.718ns route)
+                                       (48.4% logic, 51.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 183 / 4
+-------------------------------------------------------------------------
+Offset:              9.735ns (Levels of Logic = 8)
+  Source:            OPCODE<5> (PAD)
+  Destination:       current_state_FSM_FFd3 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: OPCODE<5> to current_state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.715   1.201  OPCODE_5_IBUF (OPCODE_5_IBUF)
+     LUT4:I0->O            3   0.479   1.066  current_state_FSM_FFd4-In31 (N6)
+     LUT3:I0->O            3   0.479   1.066  current_state_FSM_FFd1-In311 (current_state_cmp_eq0012)
+     LUT3:I0->O            1   0.479   0.704  current_state_FSM_FFd2-In12_SW0 (N33)
+     LUT4:I3->O            2   0.479   0.915  current_state_FSM_FFd2-In12 (current_state_FSM_N20)
+     LUT3:I1->O            1   0.479   0.000  current_state_FSM_FFd3-In77_G (N61)
+     MUXF5:I1->O           1   0.314   0.704  current_state_FSM_FFd3-In77 (current_state_FSM_FFd3-In77)
+     LUT4:I3->O            1   0.479   0.000  current_state_FSM_FFd3-In99 (current_state_FSM_FFd3-In)
+     FDC:D                     0.176          current_state_FSM_FFd3
+    ----------------------------------------
+    Total                      9.735ns (4.079ns logic, 5.656ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 22 / 8
+-------------------------------------------------------------------------
+Offset:              8.083ns (Levels of Logic = 2)
+  Source:            current_state_FSM_FFd3 (FF)
+  Destination:       DMEM_write<3> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: current_state_FSM_FFd3 to DMEM_write<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.626   1.290  current_state_FSM_FFd3 (current_state_FSM_FFd3)
+     LUT2:I0->O            4   0.479   0.779  current_state_FSM_Out111 (DMEM_write_0_OBUF)
+     OBUF:I->O                 4.909          DMEM_write_3_OBUF (DMEM_write<3>)
+    ----------------------------------------
+    Total                      8.083ns (6.014ns logic, 2.069ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 5 / 1
+-------------------------------------------------------------------------
+Delay:               10.721ns (Levels of Logic = 5)
+  Source:            OPCODE<0> (PAD)
+  Destination:       MAR_write (PAD)
+
+  Data Path: OPCODE<0> to MAR_write
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.715   1.074  OPCODE_0_IBUF (OPCODE_0_IBUF)
+     LUT3:I0->O            3   0.479   1.066  MAR_write111 (N30)
+     LUT3:I0->O            4   0.479   0.838  MAR_write11 (current_state_FSM_FFd3-In2)
+     LUT4:I2->O            1   0.479   0.681  MAR_write2 (MAR_write_OBUF)
+     OBUF:I->O                 4.909          MAR_write_OBUF (MAR_write)
+    ----------------------------------------
+    Total                     10.721ns (7.061ns logic, 3.660ns route)
+                                       (65.9% logic, 34.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.48 secs
+ 
+--> 
+
+Total memory usage is 240000 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

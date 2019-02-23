@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/toplevel.vhd</arg>&quot; line <arg fmt="%d" index="2">238</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">NE</arg>&apos; of component &apos;<arg fmt="%s" index="4">datapath</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/toplevel.vhd</arg>&quot; line <arg fmt="%d" index="2">238</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">datapath</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/toplevel.vhd</arg>&quot; line <arg fmt="%d" index="2">238</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">datapath</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_fsm.vhd</arg>&quot; line <arg fmt="%d" index="2">87</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;stall_signal&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/addsub32x.vhd</arg>&quot; line <arg fmt="%d" index="2">38</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/LU.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_32x.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/SHIFT.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_5to1_32x.vhd</arg>&quot; line <arg fmt="%d" index="2">46</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_5to1_32x.vhd</arg>&quot; line <arg fmt="%d" index="2">46</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/DMEM.vhd</arg>&quot; line <arg fmt="%d" index="2">40</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dop</arg>&apos; of component &apos;<arg fmt="%s" index="4">spdistram</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/DMEM.vhd</arg>&quot; line <arg fmt="%d" index="2">40</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dop</arg>&apos; of component &apos;<arg fmt="%s" index="4">spdistram</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/DMEM.vhd</arg>&quot; line <arg fmt="%d" index="2">40</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dop</arg>&apos; of component &apos;<arg fmt="%s" index="4">spdistram</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/DMEM.vhd</arg>&quot; line <arg fmt="%d" index="2">40</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dop</arg>&apos; of component &apos;<arg fmt="%s" index="4">spdistram</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd</arg>&quot; line <arg fmt="%d" index="2">79</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dop</arg>&apos; of component &apos;<arg fmt="%s" index="4">spdistram32_0</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dop</arg>&apos; of component &apos;<arg fmt="%s" index="4">spdistram32_1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd</arg>&quot; line <arg fmt="%d" index="2">101</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dop</arg>&apos; of component &apos;<arg fmt="%s" index="4">spdistram32_2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd</arg>&quot; line <arg fmt="%d" index="2">112</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dop</arg>&apos; of component &apos;<arg fmt="%s" index="4">spdistram32_3</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Xhaar/Desktop/MIPS2000VHDL/IMEM.vhd</arg>&quot; line <arg fmt="%d" index="2">130</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">I&lt;31:30&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INa&lt;31:5&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">lui_en</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">10000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ALUop_S&lt;3:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">CO</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">NE</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">OFL</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">w_CountOut</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">w_BUSALU</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">w_AUXout_4</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">w_AUXout_3</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">w_AUXout_2</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">w_AUXout_1</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="524" delta="old" >All outputs of the instance &lt;<arg fmt="%s" index="1">RegALUout</arg>&gt; of the block &lt;<arg fmt="%s" index="2">R32</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">datapath</arg>&gt;.
+This instance will be removed from the design along with all underlying logic
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_Regfile_Coff</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_Regfile_Coff_ren</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">RI_0/Rinst</arg> in unit <arg fmt="%s" index="2">RI_0/Rinst</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">RI_1/RAMB16BWE_S36_inst</arg> in unit <arg fmt="%s" index="2">RI_1/RAMB16BWE_S36_inst</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">RI_2/RAMB16BWE_S36_inst</arg> in unit <arg fmt="%s" index="2">RI_2/RAMB16BWE_S36_inst</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">RI_3/RAMB16BWE_S36_inst</arg> in unit <arg fmt="%s" index="2">RI_3/RAMB16BWE_S36_inst</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">DATAMEMORY/R[0].RI/RAMB16_S9_inst</arg> in unit <arg fmt="%s" index="2">DATAMEMORY/R[0].RI/RAMB16_S9_inst</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">DATAMEMORY/R[1].RI/RAMB16_S9_inst</arg> in unit <arg fmt="%s" index="2">DATAMEMORY/R[1].RI/RAMB16_S9_inst</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">DATAMEMORY/R[2].RI/RAMB16_S9_inst</arg> in unit <arg fmt="%s" index="2">DATAMEMORY/R[2].RI/RAMB16_S9_inst</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">DATAMEMORY/R[3].RI/RAMB16_S9_inst</arg> in unit <arg fmt="%s" index="2">DATAMEMORY/R[3].RI/RAMB16_S9_inst</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2716" delta="old" >In unit <arg fmt="%s" index="1">Toplevel</arg>, both signals <arg fmt="%s" index="2">w_DEMwrite&lt;3&gt;</arg> and <arg fmt="%s" index="3">w_DEMwrite&lt;0&gt;</arg> have a KEEP attribute, signal <arg fmt="%s" index="4">w_DEMwrite&lt;0&gt;</arg> will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="2716" delta="old" >In unit <arg fmt="%s" index="1">Toplevel</arg>, both signals <arg fmt="%s" index="2">w_DEMwrite&lt;2&gt;</arg> and <arg fmt="%s" index="3">w_DEMwrite&lt;0&gt;</arg> have a KEEP attribute, signal <arg fmt="%s" index="4">w_DEMwrite&lt;0&gt;</arg> will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="2716" delta="old" >In unit <arg fmt="%s" index="1">Toplevel</arg>, both signals <arg fmt="%s" index="2">w_DEMwrite&lt;1&gt;</arg> and <arg fmt="%s" index="3">w_DEMwrite&lt;0&gt;</arg> have a KEEP attribute, signal <arg fmt="%s" index="4">w_DEMwrite&lt;0&gt;</arg> will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="1303" delta="old" >From in and out of unit <arg fmt="%s" index="1">INSTRUCTIONMEMORY</arg>, both signals <arg fmt="%s" index="2">clk</arg> and <arg fmt="%s" index="3">CLK</arg> have a KEEP attribute, signal <arg fmt="%s" index="4">clk</arg> will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">datapath_module/I/D_out_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;datapath_module/I/D_out_17&gt; &lt;datapath_module/I/D_out_18&gt; &lt;datapath_module/I/D_out_19&gt; &lt;datapath_module/I/D_out_20&gt; &lt;datapath_module/I/D_out_21&gt; &lt;datapath_module/I/D_out_22&gt; &lt;datapath_module/I/D_out_23&gt; &lt;datapath_module/I/D_out_24&gt; &lt;datapath_module/I/D_out_25&gt; &lt;datapath_module/I/D_out_26&gt; &lt;datapath_module/I/D_out_27&gt; &lt;datapath_module/I/D_out_28&gt; &lt;datapath_module/I/D_out_29&gt; &lt;datapath_module/I/D_out_30&gt; &lt;datapath_module/I/D_out_31&gt; </arg>
+</msg>
+
+</messages>
+

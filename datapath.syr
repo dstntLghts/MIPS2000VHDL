@@ -1,0 +1,1069 @@
+Release 13.1 - xst O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: datapath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "datapath.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "datapath"
+Output Format                      : NGC
+Target Device                      : xc3s2000-5-fg456
+
+---- Source Options
+Top Module Name                    : datapath
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/atpg_counter.vhd" in Library work.
+Architecture behavioral of Entity atpg_counter is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/rom.vhd" in Library work.
+Architecture arch of Entity rom is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/counter.vhd" in Library work.
+Architecture behv of Entity counter is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/lfsr.vhd" in Library work.
+Architecture modular of Entity lfsr is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_lfsr.vhd" in Library work.
+Architecture stractural of Entity mult_lfsr is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_dtrm.vhd" in Library work.
+Architecture stractural of Entity mult_dtrm is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_atpg.vhd" in Library work.
+Architecture behavioral of Entity mult_atpg is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_x64.vhd" in Library work.
+Architecture structural of Entity mux_4to1_x64 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_32x32.vhd" in Library work.
+Architecture behavioral of Entity mult_32x32 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/misr.vhd" in Library work.
+Architecture modular of Entity misr is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/addsub32x.vhd" in Library work.
+Architecture structural of Entity addsub32x is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/LU.vhd" in Library work.
+Architecture structural of Entity lu is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_32x.vhd" in Library work.
+Architecture structural of Entity mux4to1_32x is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/OR_tree.vhd" in Library work.
+Architecture structural of Entity or_tree is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SLT.vhd" in Library work.
+Architecture behavioral of Entity slt is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SHIFT.vhd" in Library work.
+Architecture behavioral of Entity shift is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/R32we.vhd" in Library work.
+Architecture behavioral of Entity r32we is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/INC.vhd" in Library work.
+Architecture behavioral of Entity inc is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/R32.vhd" in Library work.
+Architecture behavioral of Entity r32 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/reg_file_block.vhd" in Library work.
+Architecture regfile_block of Entity regfile_bl is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/EXT_sz.vhd" in Library work.
+Architecture behavioral of Entity ext_sz is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_aux.vhd" in Library work.
+Architecture structural of Entity cntr_aux is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SL2.vhd" in Library work.
+Architecture structural of Entity sl2 is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_2to1_32x.vhd" in Library work.
+Architecture structural of Entity mux_2to1_32x is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ADD32bit.vhd" in Library work.
+Architecture behavioral of Entity add32bit is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/BUS32_aux.vhd" in Library work.
+Architecture structural of Entity bus32_aux is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DFF.vhd" in Library work.
+Architecture behavioral of Entity dff is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/XOR32bit.vhd" in Library work.
+Architecture behavioral of Entity xor32bit is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/AND2bit.vhd" in Library work.
+Architecture behavioral of Entity and2bit is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/MUX3to1x32bit.vhd" in Library work.
+Architecture behavioral of Entity mux3to1x32bit is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DFT_Mult.vhd" in Library work.
+Architecture stractural of Entity dft_mult is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_5to1_32x.vhd" in Library work.
+Architecture behavioral of Entity mux_5to1_32x is up to date.
+Compiling vhdl file "C:/Users/Xhaar/Desktop/MIPS2000VHDL/datapath.vhd" in Library work.
+Architecture behavioral of Entity datapath is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <datapath> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <R32we> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <INC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <R32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Regfile_bl> in library <work> (architecture <regfile_block>).
+
+Analyzing hierarchy for entity <EXT_sz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CNTR_aux> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <SL2> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux_2to1_32x> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <ADD32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BUS32_aux> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <DFF> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <XOR32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <AND2bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX3to1x32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DFT_Mult> in library <work> (architecture <stractural>).
+
+Analyzing hierarchy for entity <mux_5to1_32x> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <addsub32x> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <LU> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux4to1_32x> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <OR_tree> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <SLT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SHIFT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mult_lfsr> in library <work> (architecture <stractural>).
+
+Analyzing hierarchy for entity <mult_dtrm> in library <work> (architecture <stractural>).
+
+Analyzing hierarchy for entity <mult_atpg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux_4to1_x64> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mult_32x32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <misr> in library <work> (architecture <modular>).
+
+Analyzing hierarchy for entity <LFSR> in library <work> (architecture <modular>).
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <behv>) with generics.
+	n = 8
+
+Analyzing hierarchy for entity <atpg_counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rom> in library <work> (architecture <arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <datapath> in library <work> (Architecture <behavioral>).
+Entity <datapath> analyzed. Unit <datapath> generated.
+
+Analyzing Entity <R32we> in library <work> (Architecture <behavioral>).
+Entity <R32we> analyzed. Unit <R32we> generated.
+
+Analyzing Entity <INC> in library <work> (Architecture <behavioral>).
+Entity <INC> analyzed. Unit <INC> generated.
+
+Analyzing Entity <R32> in library <work> (Architecture <behavioral>).
+Entity <R32> analyzed. Unit <R32> generated.
+
+Analyzing Entity <Regfile_bl> in library <work> (Architecture <regfile_block>).
+Entity <Regfile_bl> analyzed. Unit <Regfile_bl> generated.
+
+Analyzing Entity <EXT_sz> in library <work> (Architecture <behavioral>).
+Entity <EXT_sz> analyzed. Unit <EXT_sz> generated.
+
+Analyzing Entity <CNTR_aux> in library <work> (Architecture <structural>).
+Entity <CNTR_aux> analyzed. Unit <CNTR_aux> generated.
+
+Analyzing Entity <SL2> in library <work> (Architecture <structural>).
+Entity <SL2> analyzed. Unit <SL2> generated.
+
+Analyzing Entity <mux_2to1_32x> in library <work> (Architecture <structural>).
+Entity <mux_2to1_32x> analyzed. Unit <mux_2to1_32x> generated.
+
+Analyzing Entity <ADD32bit> in library <work> (Architecture <behavioral>).
+Entity <ADD32bit> analyzed. Unit <ADD32bit> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <addsub32x> in library <work> (Architecture <structural>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/addsub32x.vhd" line 38: Mux is complete : default of case is discarded
+Entity <addsub32x> analyzed. Unit <addsub32x> generated.
+
+Analyzing Entity <LU> in library <work> (Architecture <structural>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/LU.vhd" line 41: Mux is complete : default of case is discarded
+Entity <LU> analyzed. Unit <LU> generated.
+
+Analyzing Entity <mux4to1_32x> in library <work> (Architecture <structural>).
+Entity <mux4to1_32x> analyzed. Unit <mux4to1_32x> generated.
+
+Analyzing Entity <OR_tree> in library <work> (Architecture <structural>).
+Entity <OR_tree> analyzed. Unit <OR_tree> generated.
+
+Analyzing Entity <SLT> in library <work> (Architecture <behavioral>).
+Entity <SLT> analyzed. Unit <SLT> generated.
+
+Analyzing Entity <SHIFT> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SHIFT.vhd" line 62: Mux is complete : default of case is discarded
+Entity <SHIFT> analyzed. Unit <SHIFT> generated.
+
+Analyzing Entity <BUS32_aux> in library <work> (Architecture <structural>).
+Entity <BUS32_aux> analyzed. Unit <BUS32_aux> generated.
+
+Analyzing Entity <DFF> in library <work> (Architecture <behavioral>).
+Entity <DFF> analyzed. Unit <DFF> generated.
+
+Analyzing Entity <XOR32bit> in library <work> (Architecture <behavioral>).
+Entity <XOR32bit> analyzed. Unit <XOR32bit> generated.
+
+Analyzing Entity <AND2bit> in library <work> (Architecture <behavioral>).
+Entity <AND2bit> analyzed. Unit <AND2bit> generated.
+
+Analyzing Entity <MUX3to1x32bit> in library <work> (Architecture <behavioral>).
+Entity <MUX3to1x32bit> analyzed. Unit <MUX3to1x32bit> generated.
+
+Analyzing Entity <DFT_Mult> in library <work> (Architecture <stractural>).
+Entity <DFT_Mult> analyzed. Unit <DFT_Mult> generated.
+
+Analyzing Entity <mult_lfsr> in library <work> (Architecture <stractural>).
+Entity <mult_lfsr> analyzed. Unit <mult_lfsr> generated.
+
+Analyzing Entity <LFSR> in library <work> (Architecture <modular>).
+Entity <LFSR> analyzed. Unit <LFSR> generated.
+
+Analyzing Entity <mult_dtrm> in library <work> (Architecture <stractural>).
+Entity <mult_dtrm> analyzed. Unit <mult_dtrm> generated.
+
+Analyzing generic Entity <counter> in library <work> (Architecture <behv>).
+	n = 8
+Entity <counter> analyzed. Unit <counter> generated.
+
+Analyzing Entity <mult_atpg> in library <work> (Architecture <behavioral>).
+Entity <mult_atpg> analyzed. Unit <mult_atpg> generated.
+
+Analyzing Entity <atpg_counter> in library <work> (Architecture <behavioral>).
+Entity <atpg_counter> analyzed. Unit <atpg_counter> generated.
+
+Analyzing Entity <rom> in library <work> (Architecture <arch>).
+Entity <rom> analyzed. Unit <rom> generated.
+
+Analyzing Entity <mux_4to1_x64> in library <work> (Architecture <structural>).
+Entity <mux_4to1_x64> analyzed. Unit <mux_4to1_x64> generated.
+
+Analyzing Entity <mult_32x32> in library <work> (Architecture <behavioral>).
+Entity <mult_32x32> analyzed. Unit <mult_32x32> generated.
+
+Analyzing Entity <misr> in library <work> (Architecture <modular>).
+Entity <misr> analyzed. Unit <misr> generated.
+
+Analyzing Entity <mux_5to1_32x> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_5to1_32x.vhd" line 46: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_5to1_32x.vhd" line 46: Mux is complete : default of case is discarded
+Entity <mux_5to1_32x> analyzed. Unit <mux_5to1_32x> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <R32we>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/R32we.vhd".
+    Found 32-bit register for signal <D_out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <R32we> synthesized.
+
+
+Synthesizing Unit <INC>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/INC.vhd".
+    Found 32-bit adder for signal <NPC>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <INC> synthesized.
+
+
+Synthesizing Unit <R32>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/R32.vhd".
+    Found 32-bit register for signal <D_out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <R32> synthesized.
+
+
+Synthesizing Unit <Regfile_bl>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/reg_file_block.vhd".
+    Found 32x32-bit dual-port RAM <Mram_Regfile_Coff> for signal <Regfile_Coff>.
+    Found 32x32-bit dual-port RAM <Mram_Regfile_Coff_ren> for signal <Regfile_Coff>.
+    Found 32-bit register for signal <Bus_A>.
+    Found 32-bit register for signal <Bus_B>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  64 D-type flip-flop(s).
+Unit <Regfile_bl> synthesized.
+
+
+Synthesizing Unit <EXT_sz>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/EXT_sz.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <I>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <EXT_sz> synthesized.
+
+
+Synthesizing Unit <CNTR_aux>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/CNTR_aux.vhd".
+Unit <CNTR_aux> synthesized.
+
+
+Synthesizing Unit <SL2>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SL2.vhd".
+WARNING:Xst:647 - Input <I<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <SL2> synthesized.
+
+
+Synthesizing Unit <mux_2to1_32x>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_2to1_32x.vhd".
+Unit <mux_2to1_32x> synthesized.
+
+
+Synthesizing Unit <ADD32bit>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ADD32bit.vhd".
+    Found 32-bit adder for signal <Output>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADD32bit> synthesized.
+
+
+Synthesizing Unit <BUS32_aux>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/BUS32_aux.vhd".
+Unit <BUS32_aux> synthesized.
+
+
+Synthesizing Unit <DFF>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DFF.vhd".
+    Found 1-bit register for signal <Outp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <DFF> synthesized.
+
+
+Synthesizing Unit <XOR32bit>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/XOR32bit.vhd".
+    Found 1-bit xor2 for signal <Outp>.
+Unit <XOR32bit> synthesized.
+
+
+Synthesizing Unit <AND2bit>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/AND2bit.vhd".
+Unit <AND2bit> synthesized.
+
+
+Synthesizing Unit <MUX3to1x32bit>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/MUX3to1x32bit.vhd".
+Unit <MUX3to1x32bit> synthesized.
+
+
+Synthesizing Unit <mux_5to1_32x>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_5to1_32x.vhd".
+Unit <mux_5to1_32x> synthesized.
+
+
+Synthesizing Unit <addsub32x>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/addsub32x.vhd".
+    Found 32-bit addsub for signal <S0>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addsub32x> synthesized.
+
+
+Synthesizing Unit <LU>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/LU.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <OUTa>.
+    Found 32-bit xor2 for signal <OUTa$xor0000> created at line 40.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <LU> synthesized.
+
+
+Synthesizing Unit <mux4to1_32x>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_32x.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <O>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <mux4to1_32x> synthesized.
+
+
+Synthesizing Unit <OR_tree>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/OR_tree.vhd".
+Unit <OR_tree> synthesized.
+
+
+Synthesizing Unit <SLT>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SLT.vhd".
+Unit <SLT> synthesized.
+
+
+Synthesizing Unit <SHIFT>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/SHIFT.vhd".
+WARNING:Xst:647 - Input <INa<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <lui_en> is used but never assigned. This sourceless signal will be automatically connected to value 10000.
+    Found 32-bit 4-to-1 multiplexer for signal <OUTa>.
+    Found 32-bit shifter logical left for signal <OUTa$shift0003> created at line 59.
+    Found 32-bit shifter logical right for signal <OUTa$shift0004> created at line 61.
+    Found 32-bit shifter arithmetic right for signal <OUTa$shift0005> created at line 62.
+    Summary:
+	inferred  32 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <SHIFT> synthesized.
+
+
+Synthesizing Unit <mux_4to1_x64>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mux_4to1_x64.vhd".
+    Found 64-bit 4-to-1 multiplexer for signal <Outp>.
+    Summary:
+	inferred  64 Multiplexer(s).
+Unit <mux_4to1_x64> synthesized.
+
+
+Synthesizing Unit <mult_32x32>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_32x32.vhd".
+    Found 32x32-bit multiplier for signal <Puns>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <mult_32x32> synthesized.
+
+
+Synthesizing Unit <misr>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/misr.vhd".
+    Found 64-bit register for signal <misr_reg>.
+    Found 1-bit xor4 for signal <misr_reg$xor0000> created at line 27.
+    Found 64-bit xor2 for signal <misr_reg$xor0001> created at line 28.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <misr> synthesized.
+
+
+Synthesizing Unit <LFSR>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/lfsr.vhd".
+    Found 64-bit register for signal <lfsr_reg>.
+    Found 1-bit xor4 for signal <lfsr_reg$xor0000> created at line 26.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <LFSR> synthesized.
+
+
+Synthesizing Unit <counter>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/counter.vhd".
+    Found 8-bit up counter for signal <Pre_Q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <atpg_counter>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/atpg_counter.vhd".
+    Found 7-bit up counter for signal <count_int>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <atpg_counter> synthesized.
+
+
+Synthesizing Unit <rom>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/rom.vhd".
+    Found 128x64-bit ROM for signal <data>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <rom> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/ALU.vhd".
+WARNING:Xst:646 - Signal <ALUop_S<3:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <mult_lfsr>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_lfsr.vhd".
+Unit <mult_lfsr> synthesized.
+
+
+Synthesizing Unit <mult_dtrm>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_dtrm.vhd".
+Unit <mult_dtrm> synthesized.
+
+
+Synthesizing Unit <mult_atpg>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/mult_atpg.vhd".
+Unit <mult_atpg> synthesized.
+
+
+Synthesizing Unit <DFT_Mult>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/DFT_Mult.vhd".
+Unit <DFT_Mult> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "C:/Users/Xhaar/Desktop/MIPS2000VHDL/datapath.vhd".
+WARNING:Xst:1306 - Output <CO> is never assigned.
+WARNING:Xst:1306 - Output <NE> is never assigned.
+WARNING:Xst:1306 - Output <OFL> is never assigned.
+WARNING:Xst:1780 - Signal <w_CountOut> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <w_BUSALU> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <datapath> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+WARNING:Xst:524 - All outputs of the instance <RegALUout> of the block <R32> are unconnected in block <datapath>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# ROMs                                                 : 1
+ 128x64-bit ROM                                        : 1
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Counters                                             : 2
+ 7-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 16
+ 1-bit register                                        : 1
+ 32-bit register                                       : 13
+ 64-bit register                                       : 2
+# Multiplexers                                         : 5
+ 32-bit 4-to-1 multiplexer                             : 4
+ 64-bit 4-to-1 multiplexer                             : 1
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 1
+ 1-bit xor4                                            : 2
+ 32-bit xor2                                           : 1
+ 64-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Regfile_bl>.
+INFO:Xst:3226 - The RAM <Mram_Regfile_Coff> will be implemented as a BLOCK RAM, absorbing the following register(s): <Bus_A>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <Addr_in>       |          |
+    |     diA            | connected to signal <Bus_W>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clk>           | fall     |
+    |     addrB          | connected to signal <rs>            |          |
+    |     doB            | connected to signal <Bus_A>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_Regfile_Coff_ren> will be implemented as a BLOCK RAM, absorbing the following register(s): <Bus_B>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <Addr_in>       |          |
+    |     diA            | connected to signal <Bus_W>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clk>           | fall     |
+    |     addrB          | connected to signal <rt>            |          |
+    |     doB            | connected to signal <Bus_B>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Regfile_bl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port block RAM                         : 2
+# ROMs                                                 : 1
+ 128x64-bit ROM                                        : 1
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Counters                                             : 2
+ 7-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 481
+ Flip-Flops                                            : 481
+# Multiplexers                                         : 5
+ 32-bit 4-to-1 multiplexer                             : 4
+ 64-bit 4-to-1 multiplexer                             : 1
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 1
+ 1-bit xor4                                            : 2
+ 32-bit xor2                                           : 1
+ 64-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <datapath> ...
+
+Optimizing unit <R32we> ...
+
+Optimizing unit <R32> ...
+
+Optimizing unit <Regfile_bl> ...
+
+Optimizing unit <LU> ...
+
+Optimizing unit <SHIFT> ...
+
+Optimizing unit <misr> ...
+
+Optimizing unit <LFSR> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <I/D_out_31> in Unit <datapath> is equivalent to the following 15 FFs/Latches, which will be removed : <I/D_out_30> <I/D_out_29> <I/D_out_28> <I/D_out_27> <I/D_out_26> <I/D_out_25> <I/D_out_24> <I/D_out_23> <I/D_out_22> <I/D_out_21> <I/D_out_20> <I/D_out_19> <I/D_out_18> <I/D_out_17> <I/D_out_16> 
+Found area constraint ratio of 100 (+ 5) on block datapath, actual ratio is 5.
+FlipFlop IR/D_out_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop IR/D_out_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop IR/D_out_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop IR/D_out_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop IR/D_out_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop IR/D_out_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 487
+ Flip-Flops                                            : 487
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : datapath.ngr
+Top Level Output File Name         : datapath
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 332
+
+Cell Usage :
+# BELS                             : 2453
+#      GND                         : 3
+#      INV                         : 13
+#      LUT1                        : 49
+#      LUT2                        : 119
+#      LUT2_D                      : 2
+#      LUT2_L                      : 8
+#      LUT3                        : 585
+#      LUT3_D                      : 122
+#      LUT3_L                      : 22
+#      LUT4                        : 817
+#      LUT4_D                      : 7
+#      LUT4_L                      : 61
+#      MUXCY                       : 182
+#      MUXF5                       : 283
+#      VCC                         : 1
+#      XORCY                       : 179
+# FlipFlops/Latches                : 487
+#      FD                          : 65
+#      FDC                         : 192
+#      FDCE                        : 166
+#      FDR                         : 42
+#      FDS                         : 22
+# RAMS                             : 2
+#      RAMB16                      : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 328
+#      IBUF                        : 90
+#      OBUF                        : 238
+# MULTs                            : 4
+#      MULT18X18                   : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s2000fg456-5 
+
+ Number of Slices:                      966  out of  20480     4%  
+ Number of Slice Flip Flops:            475  out of  40960     1%  
+ Number of 4 input LUTs:               1805  out of  40960     4%  
+ Number of IOs:                         332
+ Number of bonded IOBs:                 329  out of    333    98%  
+    IOB Flip Flops:                      12
+ Number of BRAMs:                         2  out of     40     5%  
+ Number of MULT18X18s:                    4  out of     40    10%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 491   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset                              | IBUF                   | 358   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 20.959ns (Maximum Frequency: 47.711MHz)
+   Minimum input arrival time before clock: 20.597ns
+   Maximum output required time after clock: 20.826ns
+   Maximum combinational path delay: 21.098ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 20.959ns (frequency: 47.711MHz)
+  Total number of paths / destination ports: 119113537 / 469
+-------------------------------------------------------------------------
+Delay:               20.959ns (Levels of Logic = 27)
+  Source:            MULTIPLY/ATPG/ADDRSS/count_int_1 (FF)
+  Destination:       Reg_HI/D_out_31 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: MULTIPLY/ATPG/ADDRSS/count_int_1 to Reg_HI/D_out_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            341   0.626   3.375  MULTIPLY/ATPG/ADDRSS/count_int_1 (MULTIPLY/ATPG/ADDRSS/count_int_1)
+     LUT4:I0->O            2   0.479   0.915  MULTIPLY/ATPG/DATA/Mrom_data5611 (MULTIPLY/ATPG/DATA/Mrom_data325)
+     LUT3:I1->O            1   0.479   0.000  MULTIPLY/MUX/Mmux_Outp_10_f5_40_G (N1229)
+     MUXF5:I1->O           1   0.314   0.704  MULTIPLY/MUX/Mmux_Outp_10_f5_40 (MULTIPLY/MUX/Mmux_Outp_10_f541)
+     LUT4:I3->O            1   0.479   0.681  MULTIPLY/ATPG/add_signal<6>41 (MULTIPLY/ATPG/add_signal<6>42)
+     MUXF5:S->O            2   0.540   0.745  MULTIPLY/muxout_signal<47>_inv1 (MULTIPLY/muxout_signal<47>)
+     MULT18X18:B15->P30    1   4.159   0.976  MULTIPLY/MULTI/Mmult_Puns_submult_2 (MULTIPLY/MULTI/Mmult_Puns_submult_2_30)
+     LUT2:I0->O            1   0.479   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd_lut<32> (MULTIPLY/MULTI/Mmult_Puns_Madd_lut<32>)
+     MUXCY:S->O            1   0.435   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd_cy<32> (MULTIPLY/MULTI/Mmult_Puns_Madd_cy<32>)
+     XORCY:CI->O           1   0.786   0.851  MULTIPLY/MULTI/Mmult_Puns_Madd_xor<33> (MULTIPLY/MULTI/Mmult_Puns_Madd_48)
+     LUT2:I1->O            1   0.479   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_lut<48> (MULTIPLY/MULTI/Mmult_Puns_Madd1_lut<48>)
+     MUXCY:S->O            1   0.435   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<48> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<48>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<49> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<49>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<50> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<50>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<51> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<51>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<52> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<52>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<53> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<53>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<54> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<54>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<55> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<55>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<56> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<56>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<57> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<57>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<58> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<58>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<59> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<59>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<60> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<60>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<61> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<61>)
+     MUXCY:CI->O           0   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<62> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<62>)
+     XORCY:CI->O           2   0.786   0.804  MULTIPLY/MULTI/Mmult_Puns_Madd1_xor<63> (w_MULTIout<63>)
+     LUT3:I2->O            1   0.479   0.000  MULHIMUX/O<31>1 (w_HiMuxtoReg<31>)
+     FDCE:D                    0.176          Reg_HI/D_out_31
+    ----------------------------------------
+    Total                     20.959ns (11.908ns logic, 9.051ns route)
+                                       (56.8% logic, 43.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 23071747 / 536
+-------------------------------------------------------------------------
+Offset:              20.597ns (Levels of Logic = 28)
+  Source:            test_sel<0> (PAD)
+  Destination:       Reg_HI/D_out_31 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: test_sel<0> to Reg_HI/D_out_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           195   0.715   2.664  test_sel_0_IBUF (test_sel_0_IBUF)
+     LUT3_D:I0->O          1   0.479   0.704  MULTIPLY/MUX/Mmux_Outp_413 (MULTIPLY/MUX/Mmux_Outp_413)
+     LUT4:I3->O            3   0.479   0.941  MULTIPLY/MUX/Mmux_Outp_313_SW1 (N729)
+     LUT4:I1->O            1   0.479   0.000  MULTIPLY/ATPG/add_signal<6>1351_SW0_F (N1746)
+     MUXF5:I0->O           1   0.314   0.976  MULTIPLY/ATPG/add_signal<6>1351_SW0 (N1128)
+     LUT3:I0->O            2   0.479   0.745  MULTIPLY/muxout_signal<21>_inv1 (MULTIPLY/muxout_signal<21>)
+     MULT18X18:A4->P30     1   4.159   0.976  MULTIPLY/MULTI/Mmult_Puns_submult_2 (MULTIPLY/MULTI/Mmult_Puns_submult_2_30)
+     LUT2:I0->O            1   0.479   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd_lut<32> (MULTIPLY/MULTI/Mmult_Puns_Madd_lut<32>)
+     MUXCY:S->O            1   0.435   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd_cy<32> (MULTIPLY/MULTI/Mmult_Puns_Madd_cy<32>)
+     XORCY:CI->O           1   0.786   0.851  MULTIPLY/MULTI/Mmult_Puns_Madd_xor<33> (MULTIPLY/MULTI/Mmult_Puns_Madd_48)
+     LUT2:I1->O            1   0.479   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_lut<48> (MULTIPLY/MULTI/Mmult_Puns_Madd1_lut<48>)
+     MUXCY:S->O            1   0.435   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<48> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<48>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<49> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<49>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<50> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<50>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<51> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<51>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<52> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<52>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<53> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<53>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<54> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<54>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<55> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<55>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<56> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<56>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<57> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<57>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<58> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<58>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<59> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<59>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<60> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<60>)
+     MUXCY:CI->O           1   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<61> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<61>)
+     MUXCY:CI->O           0   0.056   0.000  MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<62> (MULTIPLY/MULTI/Mmult_Puns_Madd1_cy<62>)
+     XORCY:CI->O           2   0.786   0.804  MULTIPLY/MULTI/Mmult_Puns_Madd1_xor<63> (w_MULTIout<63>)
+     LUT3:I2->O            1   0.479   0.000  MULHIMUX/O<31>1 (w_HiMuxtoReg<31>)
+     FDCE:D                    0.176          Reg_HI/D_out_31
+    ----------------------------------------
+    Total                     20.597ns (11.936ns logic, 8.661ns route)
+                                       (58.0% logic, 42.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 23575 / 237
+-------------------------------------------------------------------------
+Offset:              20.826ns (Levels of Logic = 13)
+  Source:            A/D_out_0 (FF)
+  Destination:       BUS_Wout<17> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: A/D_out_0 to BUS_Wout<17>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.626   0.929  A/D_out_0 (A/D_out_0)
+     LUT4:I3->O           79   0.479   1.863  AriLogUnit/P6/Sh_am_mux0001<0>1 (AriLogUnit/P6/Sh_am_mux0001<0>1)
+     LUT3:I2->O            3   0.479   0.941  AriLogUnit/P6/Sh123_SW0 (N239)
+     LUT3_D:I1->O          4   0.479   0.838  AriLogUnit/P6/Sh121 (AriLogUnit/P6/Sh121)
+     LUT3:I2->O            2   0.479   0.804  AriLogUnit/P6/Sh24120 (AriLogUnit/P6/Sh1417)
+     LUT3_D:I2->O          1   0.479   0.740  AriLogUnit/P6/Sh24131 (AriLogUnit/P6/Sh241)
+     LUT3:I2->O            1   0.479   0.704  AriLogUnit/P6/Sh2731 (AriLogUnit/P6/Sh273)
+     LUT4:I3->O            1   0.479   0.000  AriLogUnit/P6/Mmux_OUTa_38 (AriLogUnit/P6/Mmux_OUTa_38)
+     MUXF5:I1->O           1   0.314   0.704  AriLogUnit/P6/Mmux_OUTa_2_f5_7 (AriLogUnit/Shift_out<17>)
+     LUT4:I3->O            4   0.479   0.838  AriLogUnit/P3/Mmux_O16 (w_BUS_S<17>)
+     LUT4:I2->O            1   0.479   0.000  DMorALUorMUL_Mux/Outp<17>46_F (N1560)
+     MUXF5:I0->O           1   0.314   0.740  DMorALUorMUL_Mux/Outp<17>46 (DMorALUorMUL_Mux/Outp<17>46)
+     LUT3:I2->O            3   0.479   0.771  DMorALUorMUL_Mux/Outp<17>56 (RegFile/Bus_W<17>)
+     OBUF:I->O                 4.909          BUS_Wout_17_OBUF (BUS_Wout<17>)
+    ----------------------------------------
+    Total                     20.826ns (10.953ns logic, 9.873ns route)
+                                       (52.6% logic, 47.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 16983 / 66
+-------------------------------------------------------------------------
+Delay:               21.098ns (Levels of Logic = 14)
+  Source:            BorI (PAD)
+  Destination:       BUS_Wout<17> (PAD)
+
+  Data Path: BorI to BUS_Wout<17>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            35   0.715   1.885  BorI_IBUF (BorI_IBUF)
+     LUT3_D:I0->O          8   0.479   1.091  BorImux/O<27>1 (w_MuxtoALU<27>)
+     LUT3:I1->O            3   0.479   0.941  AriLogUnit/P6/Sh123_SW0 (N239)
+     LUT3_D:I1->O          4   0.479   0.838  AriLogUnit/P6/Sh121 (AriLogUnit/P6/Sh121)
+     LUT3:I2->O            2   0.479   0.804  AriLogUnit/P6/Sh24120 (AriLogUnit/P6/Sh1417)
+     LUT3_D:I2->O          1   0.479   0.740  AriLogUnit/P6/Sh24131 (AriLogUnit/P6/Sh241)
+     LUT3:I2->O            1   0.479   0.704  AriLogUnit/P6/Sh2731 (AriLogUnit/P6/Sh273)
+     LUT4:I3->O            1   0.479   0.000  AriLogUnit/P6/Mmux_OUTa_38 (AriLogUnit/P6/Mmux_OUTa_38)
+     MUXF5:I1->O           1   0.314   0.704  AriLogUnit/P6/Mmux_OUTa_2_f5_7 (AriLogUnit/Shift_out<17>)
+     LUT4:I3->O            4   0.479   0.838  AriLogUnit/P3/Mmux_O16 (w_BUS_S<17>)
+     LUT4:I2->O            1   0.479   0.000  DMorALUorMUL_Mux/Outp<17>46_F (N1560)
+     MUXF5:I0->O           1   0.314   0.740  DMorALUorMUL_Mux/Outp<17>46 (DMorALUorMUL_Mux/Outp<17>46)
+     LUT3:I2->O            3   0.479   0.771  DMorALUorMUL_Mux/Outp<17>56 (RegFile/Bus_W<17>)
+     OBUF:I->O                 4.909          BUS_Wout_17_OBUF (BUS_Wout<17>)
+    ----------------------------------------
+    Total                     21.098ns (11.042ns logic, 10.056ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 32.03 secs
+ 
+--> 
+
+Total memory usage is 321280 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

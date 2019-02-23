@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/dmem.xst" -ofn "C:/Users/Xhaar/Desktop/MIPS2000VHDL/dmem.syr" 
